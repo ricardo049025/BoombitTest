@@ -41,9 +41,11 @@
     <None Remove="Microsoft.EntityFrameworkCore.Design" />
     <None Remove="DTOs\" />
     <None Remove="DTOs\ResponseDTO\" />
+    <None Remove="DTOs\RequestDTO\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DTOs\" />
     <Folder Include="DTOs\ResponseDTO\" />
+    <Folder Include="DTOs\RequestDTO\" />
   </ItemGroup>
 </Project>

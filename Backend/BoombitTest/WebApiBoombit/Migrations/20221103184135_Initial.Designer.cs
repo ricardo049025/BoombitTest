@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace WebApiBoombit.Migrations
 {
     [DbContext(typeof(ApiContext))]
-    [Migration("20221103145355_Initial")]
+    [Migration("20221103184135_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -48,6 +48,22 @@ namespace WebApiBoombit.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("Activities");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            ActivityDescription = "CREATION",
+                            CreatedDay = new DateTime(2022, 11, 3, 12, 41, 35, 818, DateTimeKind.Local).AddTicks(3380),
+                            UserId = 1
+                        },
+                        new
+                        {
+                            Id = 2,
+                            ActivityDescription = "CREATION",
+                            CreatedDay = new DateTime(2022, 11, 3, 12, 41, 35, 818, DateTimeKind.Local).AddTicks(3380),
+                            UserId = 2
+                        });
                 });
 
             modelBuilder.Entity("Domain.Entities.Models.Country", b =>

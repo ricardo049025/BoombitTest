@@ -369,6 +369,16 @@ namespace WebApiBoombit.Migrations
                 columns: new[] { "Id", "Birthday", "CountryId", "Email", "LastName", "Name", "NeedInformation", "PhoneNumber" },
                 values: new object[] { 2, new DateTime(2000, 12, 18, 0, 0, 0, 0, DateTimeKind.Unspecified), 2, "example@boombit.com", "Costa Rica", "UserBoombit", false, 25222222L });
 
+            migrationBuilder.InsertData(
+                table: "Activities",
+                columns: new[] { "Id", "ActivityDescription", "CreatedDay", "UserId" },
+                values: new object[] { 1, "CREATION", new DateTime(2022, 11, 3, 12, 41, 35, 818, DateTimeKind.Local).AddTicks(3380), 1 });
+
+            migrationBuilder.InsertData(
+                table: "Activities",
+                columns: new[] { "Id", "ActivityDescription", "CreatedDay", "UserId" },
+                values: new object[] { 2, "CREATION", new DateTime(2022, 11, 3, 12, 41, 35, 818, DateTimeKind.Local).AddTicks(3380), 2 });
+
             migrationBuilder.CreateIndex(
                 name: "IX_Activities_UserId",
                 table: "Activities",

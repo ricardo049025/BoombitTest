@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Main CSS-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- Font-icon css-->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Boombit - Test</title>
+    
+  </head>
+  <body class="app sidebar-mini">
+    <!-- Navbar-->
+    <header class="app-header"><a class="app-header__logo" href="index.html">Boombit Test</a>
+      <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>  
+      <ul class="app-nav">
+      </ul>
+
+    </header>
+
+    <!-- Sidebar menu-->
+    <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+    <aside class="app-sidebar">
+      <div class="app-sidebar__user">
+        <img class="app-sidebar__user-avatar" src="./images/profile.jpg" height="45px" width="50px" alt="User Image">
+        <div>
+          <p class="app-sidebar__user-name">Ricardo Martinez</p>
+          <p class="app-sidebar__user-designation">Software Developer</p>
+        </div>
+      </div>
+      <ul class="app-menu">
+        <li><a class="app-menu__item" href="index.html"><i class="app-menu__icon fa fa-home"></i><span class="app-menu__label">Home</span></a></li>
+        <li><a class="app-menu__item" href="user.html"><i class="app-menu__icon fa fa-users"></i><span class="app-menu__label">New User</span></a></li>
+      </ul>
+    </aside>
+    <main class="app-content">
+      <div class="app-title">
+        <div>
+          <h1><i class="fa fa-users"></i> User Page</h1>
+          <p>Add all the users that you want ;-D !!</p>
+        </div>
+        <ul class="app-breadcrumb breadcrumb">
+          <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
+          <li class="breadcrumb-item"><a href="">New User</a></li>
+        </ul>
+      </div>
+
+      <div class=" offset-lg-3 offset-md-3 col-lg-6 col-md-6 col-sm-12">
+        <div class="tile">
+          <h3 class="tile-title">Register User</h3>
+          <div class="tile-body">
+            <form class="form-horizontal">
+              <div class="form-group row">
+                <label class="control-label col-md-3">Name</label>
+                <div class="col-md-8">
+                  <input id="txtName" class="form-control" type="text" placeholder="Enter Name">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="control-label col-md-3">LastName</label>
+                <div class="col-md-8">
+                  <input id="txtLastName" class="form-control" type="text" placeholder="Enter Last nAME">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="control-label col-md-3">Email</label>
+                <div class="col-md-8">
+                  <input id="txtemail" class="form-control col-md-8" type="email" placeholder="Enter email address">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="control-label col-md-3">Birthday</label>
+                <div class="col-md-8">
+                  <input id="txtBirthday" class="form-control" id="txtBirthday" type="text" placeholder="Birthday">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="control-label col-md-3">Phone Number</label>
+                <div class="col-md-8">
+                  <input id="txtPhone" class="form-control" id="txtphone" type="number" placeholder="Phone Number" oninput="this.value = !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="control-label col-md-3">Country</label>
+                <div class="col-md-8">
+                  <select class="form-control" id="txtcountry">
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-8 col-md-offset-3">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input id="txtInformation" class="form-check-input" type="checkbox"> Need more information ?
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="tile-footer">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-3">
+                <button class="btn btn-primary" type="button" onclick="addUser();"><i class="fa fa-fw fa-lg fa-check-circle"></i>Register</button>&nbsp;&nbsp;&nbsp;<a class="btn btn-secondary" href="#"><i class="fa fa-fw fa-lg fa-times-circle"></i>Cancel</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </main>
+    <!-- Essential javascripts for application to work-->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/user.js"></script>
+    <script src="js/plugins/pace.min.js"></script>
+    <script src="js/plugins/select2.min.js"></script>
+    <script src="js/plugins/bootstrap-datepicker.min.js"></script>
+    
+  </body>
+</html>

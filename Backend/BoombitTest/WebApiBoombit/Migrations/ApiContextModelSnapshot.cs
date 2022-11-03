@@ -46,6 +46,22 @@ namespace WebApiBoombit.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("Activities");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            ActivityDescription = "CREATION",
+                            CreatedDay = new DateTime(2022, 11, 3, 12, 41, 35, 818, DateTimeKind.Local).AddTicks(3380),
+                            UserId = 1
+                        },
+                        new
+                        {
+                            Id = 2,
+                            ActivityDescription = "CREATION",
+                            CreatedDay = new DateTime(2022, 11, 3, 12, 41, 35, 818, DateTimeKind.Local).AddTicks(3380),
+                            UserId = 2
+                        });
                 });
 
             modelBuilder.Entity("Domain.Entities.Models.Country", b =>

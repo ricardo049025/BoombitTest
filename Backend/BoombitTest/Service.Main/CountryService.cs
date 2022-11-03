@@ -13,6 +13,16 @@ namespace Service.Main
         {
             this.countryRepository = countryRepository;
         }
+
+        public IEnumerable<Country> getAllActiveCountries()
+        {
+            return this.countryRepository.getAll().Where(x => x.Active == true).ToList();
+        }
+
+        public Country? getCountryByCode(string code)
+        {
+            return this.countryRepository.getAll().FirstOrDefault(x => x.Code == code);
+        }
     }
 }
 

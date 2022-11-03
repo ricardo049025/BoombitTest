@@ -28,6 +28,11 @@ namespace Service.Main
             return this.userRepository.getUserWithCountryProperties();
         }
 
+        public User? getUserByIdWithCountryProperties(int id)
+        {
+            return this.userRepository.getUserByIdWithCountryProperties(id);
+        }
+
         /// <summary>
         /// This method we add a new user and at the same time
         /// we registered his activity
