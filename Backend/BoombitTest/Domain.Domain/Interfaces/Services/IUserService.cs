@@ -7,6 +7,7 @@ namespace Domain.Domain.Interfaces.Services
     {
         IEnumerable<User> getAllWithCountry();
         bool AddOrUpdateUser(User user, string? xmessage = "");
+        User? getUserByIdWithCountryProperties(int id);
     }
 }
 

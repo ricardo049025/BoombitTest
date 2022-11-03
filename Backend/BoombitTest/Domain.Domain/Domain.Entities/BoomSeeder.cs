@@ -280,6 +280,14 @@ namespace Domain.Entities
                 new User { Id = 2, Name = "UserBoombit", LastName = "Costa Rica" ,Email = "example@boombit.com", CountryId = 2, Birthday = new DateTime(2000, 12, 18), NeedInformation = false, PhoneNumber = 25222222 }
                 );
         }
+
+        public static void SeedActivity(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Activity>().HasData(
+                new Activity { Id = 1, ActivityDescription = "CREATION", CreatedDay = DateTime.Now, UserId = 1},
+                new Activity { Id = 2, ActivityDescription = "CREATION", CreatedDay = DateTime.Now, UserId = 2 }
+                );
+        }
     }
 }
 

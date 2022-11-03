@@ -24,6 +24,11 @@ namespace Service.Main
         {
             return this.getAll().Count(x => x.UserId == userId);
         }
+
+        public List<Activity> getActivitiesByUserId(int userId)
+        {
+            return this.activityRepository.GetActivitiesByUserId(userId);
+        }
     }
 }
 

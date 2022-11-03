@@ -20,6 +20,11 @@ namespace Infraestructure.Data.Repositories
             return this.context.Users.Include("Country");
         }
 
+        public User? getUserByIdWithCountryProperties(int id)
+        {
+            return this.context.Users.Include("Country").FirstOrDefault(x=> x.Id == id);
+        }
+
     }
 }
 

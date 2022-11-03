@@ -28,6 +28,7 @@ namespace Domain.Entities
         {
             BoomSeeder.SeedCountries(builder);
             BoomSeeder.SeedUsers(builder);
+            BoomSeeder.SeedActivity(builder);
         }
 
         public DbSet<Country> Countries { set; get; }
