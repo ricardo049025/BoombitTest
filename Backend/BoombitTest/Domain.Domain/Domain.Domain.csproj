@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Interfaces\" />
+    <None Remove="DTO\" />
+    <None Remove="Domain.Entities\obj\Domain.Entities.csproj.nuget.g.props" />
+    <None Remove="Domain.Entities\obj\Domain.Entities.csproj.nuget.dgspec.json" />
+    <None Remove="Domain.Entities\obj\project.nuget.cache" />
+    <None Remove="Domain.Entities\obj\Domain.Entities.csproj.nuget.g.targets" />
+    <None Remove="Domain.Entities\obj\project.assets.json" />
+    <None Remove="Domain.Entities\obj\Debug\net6.0\Domain.Entities.assets.cache" />
+    <None Remove="Domain.Entities\obj\Debug\net6.0\Domain.Entities.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Remove="Domain.Entities\obj\Debug\net6.0\Domain.Entities.AssemblyInfoInputs.cache" />
+    <None Remove="Domain.Entities\obj\Debug\net6.0\Domain.Entities.csproj.AssemblyReference.cache" />
+    <None Remove="Domain.Entities\obj\Debug\net6.0\Domain.Entities.csproj.FileListAbsolute.txt" />
+    <None Remove="Domain.Entities\obj\Debug\net6.0\Domain.Entities.csproj.CoreCompileInputs.cache" />
+    <None Remove="Domain.Entities\obj\Debug\net6.0\Domain.Entities.dll" />
+    <None Remove="Domain.Entities\obj\Debug\net6.0\Domain.Entities.pdb" />
+    <None Remove="Domain.Entities\obj\Debug\net6.0\refint\Domain.Entities.dll" />
+    <None Remove="Domain.Entities\bin\Debug\net6.0\Domain.Entities.deps.json" />
+    <None Remove="Domain.Entities\obj\Debug\net6.0\Domain.Entities.genruntimeconfig.cache" />
+    <None Remove="Domain.Entities\bin\Debug\net6.0\Domain.Entities.runtimeconfig.json" />
+    <None Remove="Domain.Entities\bin\Debug\net6.0\Domain.Entities.dll" />
+    <None Remove="Domain.Entities\obj\Debug\net6.0\ref\Domain.Entities.dll" />
+    <None Remove="Domain.Entities\bin\Debug\net6.0\Domain.Entities.pdb" />
+    <None Remove="Interfaces\Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
+    <Folder Include="DTO\" />
+    <Folder Include="Interfaces\Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Domain.Entities\ApiContext.cs" />
+    <Compile Remove="Domain.Entities\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" />
+    <Compile Remove="Domain.Entities\obj\Debug\net6.0\Domain.Entities.AssemblyInfo.cs" />
+    <Compile Remove="Domain.Entities\obj\Debug\net6.0\Domain.Entities.GlobalUsings.g.cs" />
+    <Compile Remove="Domain.Entities\Models\Activity.cs" />
+    <Compile Remove="Domain.Entities\Models\User.cs" />
+    <Compile Remove="Domain.Entities\Models\Country.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Domain.Entities\Domain.Entities.csproj" />
+  </ItemGroup>
+</Project>
