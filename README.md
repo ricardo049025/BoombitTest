@@ -1,4 +1,4 @@
-# BoombitTest
+# BoombitTest .NET core 7
 
 El proyecto contiene un proyecto para la parte del frontend (Jquery y un proyecto para la parte del backend (.net core 6.0.10).
 
