@@ -1,6 +1,6 @@
 # BoombitTest .NET core 7
 
-El proyecto contiene un proyecto para la parte del frontend (Jquery y un proyecto para la parte del backend (.net core 7.0).
+El Test contiene un proyecto para la parte del frontend (Jquery y un proyecto para la parte del backend (.net core 7.0).
 
 El proyecto jquery se encuentra ubicado en la carpeta de frontend,
 
